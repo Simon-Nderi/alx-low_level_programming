@@ -1,16 +1,12 @@
-#include "main.c"
-
+#include "main.h"
 /**
- * _isalpha - checks for alphabets
- * @c: function parameter
- * Return:1 or 0
+ * _isalpha - checks if alphabet is in caps
+ * @c: input to be checked
+ * Return: returns 0 if success
  */
-
 int _isalpha(int c)
 {
-	if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
+	if ((c >= 65 && c <= 90) || (c >= 97 && c <= 122))
 		return (1);
-	else
-		return (0);
-
+	return (0);
 }
