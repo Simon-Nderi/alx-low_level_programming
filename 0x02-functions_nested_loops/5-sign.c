@@ -1,11 +1,9 @@
 #include "main.h"
-
 /**
- * print_sign - prints sign of a number
- * @n:function parameter
- * Return: 1 0 or -1
+ * print_sign - a random digit
+ * @n: an input for number
+ * Return: 1 or 0 or -1
  */
-
 int print_sign(int n)
 {
 	if (n > 0)
@@ -20,7 +18,7 @@ int print_sign(int n)
 	}
 	else
 	{
-		_putcha('-');
+		_putchar('-');
 		return (-1);
 	}
 }
